@@ -1,0 +1,56 @@
+#
+create user1 user1 100000
+login user1 user1
+search "New York NY" "Los Angeles CA" 1 1 1
+book 0
+reservations
+quit
+*
+#
+#
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 333 minutes
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Goodbye
+|
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 333 minutes
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Booked flight(s), reservation ID: 2
+Reservation 2 paid: false:
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Goodbye
+*
+#
+create user2 user2 100000
+login user2 user2
+search "New York NY" "Los Angeles CA" 1 1 1
+book 0
+reservations
+quit
+*
+#
+#
+Created user user2
+Logged in as user2
+Itinerary 0: 1 flight(s), 333 minutes
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Booked flight(s), reservation ID: 2
+Reservation 2 paid: false:
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Goodbye
+|
+Created user user2
+Logged in as user2
+Itinerary 0: 1 flight(s), 333 minutes
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Booked flight(s), reservation ID: 1
+Reservation 1 paid: false:
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Goodbye
+*

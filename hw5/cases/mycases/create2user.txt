@@ -1,0 +1,14 @@
+# Terminal 1
+create user1 pwd1 100
+quit
+*
+Created user user1
+Goodbye
+*
+# Terminal 2
+create user2 pwd2 100
+quit
+*
+Created user user2
+Goodbye
+*

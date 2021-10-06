@@ -1,0 +1,71 @@
+-------------------------------------------------------------------------------
+Test set: flightapp.FlightServiceTest
+-------------------------------------------------------------------------------
+Tests run: 43, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 219.747 s <<< FAILURE! - in flightapp.FlightServiceTest
+flightapp.FlightServiceTest.runTest[6]  Time elapsed: 12.702 s  <<< FAILURE!
+java.lang.AssertionError: 
+Failed: actual outputs for /homes/iws/shutchis/414/hw5/chenxy07/hw5/cases/mycases/cancel2.txt were: 
+---Terminal 0 begin
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Canceled reservation 1
+Goodbye
+---Terminal 0 end
+---Terminal 1 begin
+Failed to create user
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Canceled reservation 1
+Goodbye
+---Terminal 1 end
+
+
+Possible outcomes were: 
+===== Outcome 0 =====
+---Terminal 0 begin
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Canceled reservation 1
+Goodbye
+---Terminal 0 end
+---Terminal 1 begin
+Failed to create user
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+You cannot book two flights in the same day
+Failed to cancel reservation 1
+Goodbye
+---Terminal 1 end
+
+===== Outcome 1 =====
+---Terminal 0 begin
+Failed to create user
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+You cannot book two flights in the same day
+Failed to cancel reservation 1
+Goodbye
+---Terminal 0 end
+---Terminal 1 begin
+Created user user1
+Logged in as user1
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Booked flight(s), reservation ID: 1
+Canceled reservation 1
+Goodbye
+---Terminal 1 end
+
+
+	at flightapp.FlightServiceTest.runTest(FlightServiceTest.java:328)
+

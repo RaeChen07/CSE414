@@ -1,0 +1,11 @@
+# user 1
+search "New York NY" "Los Angeles CA" 1 1 1
+quit
+*
+#
+# expected printouts for user 1
+#
+Itinerary 0: 1 flight(s), 333 minutes
+ID: 1029267 Day: 1 Carrier: VX Number: 399 Origin: New York NY Dest: Los Angeles CA Duration: 333 Capacity: 10 Price: 250
+Goodbye
+*
